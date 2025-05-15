@@ -47,7 +47,7 @@ export default {
   methods: {
     async submitForm() {
       try {
-        const response = await fetch(`${BASE_URL}/auth/v1/oauth2/login`, {
+        const response = await fetch(`${BASE_URL}/auth/v1/oauth2`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

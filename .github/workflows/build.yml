@@ -18,7 +18,7 @@ jobs:
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: ${{ secrets.AWS_DEFAULT_REGION }}
+          aws-region: ap-south-1
           audience: sts.amazonaws.com
 
       - name: Install dependencies
@@ -32,5 +32,5 @@ jobs:
         with:
           folder: dist
           bucket-name: awesome-bucket
-          bucket-region: ${{ secrets.AWS_DEFAULT_REGION }}
+          bucket-region: ap-south-1
           delete-removed: true
